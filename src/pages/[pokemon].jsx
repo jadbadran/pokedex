@@ -50,10 +50,9 @@ const Pokemon = () => {
       <div className="w-full h-screen absolute z-[-1]">
         <Image
           src="/pokedex.jpg"
-          alt="Pokedex Image"
-          layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+          alt="Pokedex Detail Background"
+          fill
+          className="rounded-lg object-cover"
           priority
         />
       </div>

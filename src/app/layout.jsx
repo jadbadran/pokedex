@@ -1,3 +1,5 @@
+"use client";
+
 import "../app/globals.css";
 import { RecoilRoot } from "recoil";
 import Header from "../components/Header";

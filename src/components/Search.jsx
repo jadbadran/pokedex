@@ -1,58 +1,23 @@
 "use client";
 
 import "../app/globals.css";
-
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import { IoMdClose } from "react-icons/io";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { searchState, pokemonListState } from "@/atoms/SearchAtom";
 import Card from "./Card";
+import usePokemonSearch from "@/hooks/usePokemonSearch";
 
 const Search = () => {
   const searchInput = useRef(null);
   const [isPopupOpen, setIsPopupOpen] = useRecoilState(searchState);
   const allPokemonList = useRecoilValue(pokemonListState);
-  const [searchedPokemons, setSearchedPokemons] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  let timeOutId = useRef(null);
-
-  useEffect(() => {
-    if (allPokemonList.length > 0) {
-      setSearchedPokemons(allPokemonList);
-      setIsLoading(false);
-    }
-  }, [allPokemonList]);
+  const { searchedPokemons, isLoading, onChange } =
+    usePokemonSearch(allPokemonList);
 
   const togglePopup = () => {
     document.body.style.overflowY = "visible";
     setIsPopupOpen(false);
-  };
-
-  const searchPokemon = (target) => {
-    if (target.trim().length === 0) {
-      setSearchedPokemons(allPokemonList);
-      return;
-    }
-
-    const matchedPokemons = allPokemonList.filter((pokemon) =>
-      pokemon.name.toLowerCase().includes(target)
-    );
-
-    console.log("matched: ", matchedPokemons);
-    setSearchedPokemons(matchedPokemons);
-  };
-
-  const onChange = (e) => {
-    const target = e.target.value.toLowerCase();
-
-    if (timeOutId.current) {
-      clearTimeout(timeOutId.current);
-    }
-
-    timeOutId.current = setTimeout(() => {
-      searchPokemon(target);
-      timeOutId.current = null;
-    }, 500);
   };
 
   return (
@@ -75,10 +40,10 @@ const Search = () => {
           />
         </div>
         {isLoading ? (
-          <div class="text-center">
-            <div class="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-yellow-500 mx-auto"></div>
-            <h2 class="text-zinc-900 mt-4">Loading...</h2>
-            <p class="text-black">Sandshrew used Spinning...</p>
+          <div className="text-center">
+            <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-yellow-500 mx-auto"></div>
+            <h2 className="text-zinc-900 mt-4">Loading...</h2>
+            <p className="text-black">Sandshrew used Spinning...</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-1">
