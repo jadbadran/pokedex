@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/Header.jsx",
+    "src/pages/index.jsx",
+    "src/pages/index.jsx",
+    "src/app/layout.jsx",
+    "src/components/First-Page.jsx",
+    "src/pages/[pokemon].jsx",
+    "src/pages/[Details].js",
+    "src/components/Search.jsx",
+    "src/utils/typeColors.jsx",
+    "src/pages/api/pokemon.ts"
+  ],
+  "exclude": ["node_modules"]
+}
