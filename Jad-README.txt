@@ -1,0 +1,17 @@
+Ce projet était un beau challenge et m'a aidé à approfondir ma connaissance sur plusieurs théories de JavaScript ! J'ai adoré ça et je suis fier d'avoir pu terminer un projet comme ça en seulement quelques jours ! Voici les faits importants du projet :
+
+Responsive Cool Design : Malgré mon œil de web designer, ce projet n'a pas autant d'aspects UI qui sont aussi captivants que mes projets précédents. Cependant, je me suis pratiqué sur des affaires pas mal cool comme le Poké-Ball qui tourne au début. Eh oui, j'ai fait ça from scratch avec Tailwind CSS et je me suis inspiré de vidéos et d'images qui m'ont donné le pouvoir de faire ce cool feature. Les boutons et les CTAs sont un aspect fort chez moi aussi. Le bouton est inspiré d'une animation que j'avais dans un header d'un autre projet. Je touche vraiment chaque détail d'un élément d'une page pour qu'un site web soit parfaitement ce que j'imagine. Je prends conscience que plusieurs éléments comme le header, le footer, la barre de recherche et d'autres choses n'ont pas un UI très développé, mais prenez conscience que j'ai les capacités de les améliorer (avec facilité en plus !).
+
+Rapidité du site web, lazy loading, preloading JS files, et du bon API fetching : Le site web est rapide car j'ai utilisé des techniques apprises auparavant telles que le lazy loading et le preload de certaines pages de JavaScript qui sont importantes. Je suis vraiment fier de comment j'ai pu fetch l'API de PokeAPI. Pour être honnête, la documentation de l'API était dure à naviguer et à comprendre, mais ma consistance et ma persévérance m'ont fait comprendre comment bien utiliser l'API. Je suis un gars classique. Cela dit, je voulais vraiment faire ce Pokédex avec seulement la première génération. D'une part, la tâche était moins compliquée à faire, et d'autre part, THE FIRST GENERATION IS THE BEST!!!
+
+Mon dévouement : Finalement, ce point n'est pas focalisé sur le site web, mais vraiment sur comment je me suis mis pour finir ce site web en quelques jours. Il y avait beaucoup de théorie que je devais connaître. J'écris souvent en Vanilla JS, et j'ai travaillé avec du React dans mon passé, même du React Native (que j'ai adoré). Cependant, je n'avais jamais touché Next. J'étais craintif au début, mais j'ai réalisé rapidement que Next est même plus facile que du React seul (créer l'environnement a pris juste quelques minutes). Aussi, je connais le pouvoir des librairies avec ces frameworks (surtout du côté UI et des affaires qui facilitent énormément la vie d'une personne qui doit écrire en JS). J'ai eu un peu de difficulté avec Recoil et Router State Management, et je devais me rappeler de comment utiliser les hooks comme useState, useRef et useEffect.
+
+C'est ça, j'ai adoré ce projet après tout (je l'ai même montré à un grand fan de Pokémon). J'ai vraiment une pensée critique, de manière que je peux toujours voir quelque chose qui peut être mieux (TSX files à la place de JSX files, faire des codes plus clean surtout du côté des couleurs des types de Pokémon, éviter des codes redondants et faits rapidement, etc.). Il y a 3 choses que je peux vous garantir que vous allez aimer de moi : ma persévérance, ma pensée critique et finalement, en espérant que je peux montrer plus de skills dans mon futur sur ça, mon côté web design.
+
+https://jadpokedex.vercel.app/
+
+https://github.com/jadbadran/pokedex
+
+Portfolio: https://jadbadran.netlify.app/
+
+Jad Badran
